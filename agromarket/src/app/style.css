@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: montserrat, sans-serif;
-    background: linear-gradient(150deg,hsl(0, 0%, 100%),#fcfcfc);
+    background: linear-gradient(150deg,hsl(0, 0%, 100%),#ffffff);
     height: 100vh;
 }
 
@@ -136,7 +136,7 @@ input[type="submit"]:hover {
 }
 /* Caja de selección de perfil */
 .perfil-box {
-  border: 2px solid #4b0082;
+  border: 2px solid #8e00ed;
   border-radius: 10px;
   width: 320px;
   margin: 100px auto;
@@ -162,7 +162,7 @@ input[type="submit"]:hover {
 .btn-perfil {
   display: block;
   padding: 12px;
-  border: 1px solid #4b0082;
+  border: 1px solid #d9a3ff;
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
@@ -609,4 +609,56 @@ body {
 
 .detalles-verdes .compra:hover {
   background: #2d541a;
+}
+
+nav {
+    background-color: #cec8bf;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header {
+    background-color: #095b10;
+    color: rgb(244, 244, 244);
+    padding: 1px;
+
+}
+
+/* 📱 Pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .texto-bienvenida {
+    padding: 30px 20px;
+  }
+
+  .texto-bienvenida h1 {
+    font-size: 1.8rem;
+  }
+
+  .texto-bienvenida p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+/* 💻 Pantallas grandes */
+@media (min-width: 769px) {
+  .header {
+    flex-direction: column; /* Mantiene el logo arriba y menú debajo */
+  }
+
+  .nav {
+    flex-direction: row; /* Menú horizontal */
+  }
+
+  .texto-bienvenida {
+    padding: 60px 80px;
+  }
 }
